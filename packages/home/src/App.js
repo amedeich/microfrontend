@@ -15,7 +15,7 @@ export default ({isSignedIn, user}) => {
     <div>
       <StylesProvider generateClassName={generateClassName}>
         <Landing isSignedIn={isSignedIn} user={user} />
-      </StylesProvider> 
+      </StylesProvider>
     </div>
   );
 };
