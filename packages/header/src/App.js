@@ -8,7 +8,7 @@ import {
 import Nav from './components/Nav';
 
 const generateClassName = createGenerateClassName({
-  productionPrefix: 'au',
+  productionPrefix: 'he',
 });
 
 export default ({ history, isSignedIn, onSignOut }) => {
