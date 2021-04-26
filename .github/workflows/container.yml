@@ -23,12 +23,12 @@ jobs:
           PRODUCTION_DOMAIN: ${{ secrets.PRODUCTION_DOMAIN }}
 
       - uses: shinyinc/action-aws-cli@v1.2
-      - run: aws s3 sync dist s3://mfe-smartquick-v4/container/latest
+      - run: aws s3 sync dist s3://${{ secrets.AWS_S3_BUCKET_NAME }}/container/latest
         env:
-          AWS_ACCESS_KEY_ID: AKIA2TXKGD23VEGPI6WR
-          AWS_SECRET_ACCESS_KEY: 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
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
       - run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_DISTRIBUTION_ID }} --paths "/container/latest/index.html"
         env:
-          AWS_ACCESS_KEY_ID: AKIA2TXKGD23VEGPI6WR
-          AWS_SECRET_ACCESS_KEY: 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
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
