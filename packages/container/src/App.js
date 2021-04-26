@@ -53,10 +53,10 @@ export default () => {
     <Router history={history}>
       <StylesProvider generateClassName={generateClassName}>
         <div>
-          {/* <HeaderApp
+          <HeaderApp
             isSignedIn={isSignedIn}
             onSignOut={() => setIsSignedIn(false)}
-          /> */}
+          />
           {/* <Header
             onSignOut={() => setIsSignedIn(false)}
             isSignedIn={isSignedIn}
