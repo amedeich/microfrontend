@@ -13,7 +13,7 @@ export default function Landing({ isSignedIn, user }) {
         color="textPrimary"
         gutterBottom
       >
-        Home!!
+        Home!
       </Typography>
       {isSignedIn && <span>Se ha logeado un usuario!</span>}
     </Container>
