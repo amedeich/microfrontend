@@ -32,7 +32,7 @@ export default function App({ isSignedIn, onSignOut }) {
       <AppBar position="static" style={{ backgroundColor: "#2e2e2e" }}>
         <Toolbar>
           <Button component={RouterLink} to="/" className="button">
-            Application
+            App
           </Button>
           <Typography variant="h4" className={`${classes.title} button bold`}>
             QA
