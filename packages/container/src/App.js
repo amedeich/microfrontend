@@ -30,6 +30,7 @@ export default () => {
   const [isSignedIn, setIsSignedIn] = useState(false);
 
   useEffect(() => {
+    console.log('test!')
     if (isSignedIn) {
       history.push("/");
     }
