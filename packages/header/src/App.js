@@ -17,7 +17,7 @@ export default ({ history, isSignedIn, onSignOut }) => {
       <StylesProvider generateClassName={generateClassName}>
         <Router history={history}>
           <Switch>
-            <Route path="/">
+            <Route path="/"> 
               <Nav isSignedIn={isSignedIn} onSignOut={onSignOut} />
             </Route>
           </Switch>
