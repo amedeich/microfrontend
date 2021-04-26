@@ -11,6 +11,8 @@ const generateClassName = createGenerateClassName({
   productionPrefix: 'he',
 });
 
+console.log('!!!!!')
+
 export default ({ history, isSignedIn, onSignOut }) => {
   return (
     <div>
